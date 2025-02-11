@@ -1,0 +1,50 @@
+/* Estás caracteristicas son para dar un fondo de colores mixtos y textura de circulos*/
+
+body{
+    background: 
+      linear-gradient(rgba(7, 6, 1, 0.21) 0 0), /* color y porcentajes de los circulos */
+      radial-gradient(rgb(231, 151, 231) 12%, transparent 16%), /* color y porcentajes del fondo */
+      radial-gradient(rgb(172, 3, 3) 5%, transparent 16%) 30px 30px, /* color y porcentajes de los circulos */
+      rgb(67, 37, 1);   /* color del fondo */
+    background-size: 60px 60px;  /* tamaño del fondo */
+    color: rgb(236, 252, 224);
+    text-align: center;
+   
+  }
+
+  /* con estos margenes hago el responsive */
+  .tablero{
+      margin: auto;
+      width: 750px;
+      max-width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      
+   
+  }
+  .contedor{
+
+    display: grid;
+    
+
+
+
+  }
+  
+  /* tamaño, ancho de los botones y el pointer para que haga efecto el botón*/
+  
+  button{
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+     
+    
+  }
+.primerJugador{
+    width: 10px;
+}
+   .ganar{
+      visibility: hidden; /* oculto el mensaje de ganar */
+  } 
+  
