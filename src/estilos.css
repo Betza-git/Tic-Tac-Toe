@@ -5,11 +5,10 @@ body {
   color: rgb(4, 211, 197);
   text-align: center;
 }
-.icono-gato {
-  font-size: 7rem;
-}
+
 /* con estos margenes hago el responsive */
 .tablero {
+  margin-top: -6%;
   margin-left: 35%;
   width: 750px;
   max-width: 100%;
@@ -35,32 +34,49 @@ button:hover {
   width: 10px;
 }
 
-/*El texto se hará visible cuando hay un ganador*/
-.ganar {
-  visibility: hidden; /* oculto el mensaje de ganar */
+.contador {
+  margin-right: 60%;
+  margin-top: -67%;
 }
 
-.reset {
-  background-color: rgb(223, 176, 199);
+.contaO {
   border-radius: 10%;
-  height: 40px;
+  width: 90px;
+  height: 75px;
+}
+.contax {
+  border-radius: 10%;
+  width: 90px;
+  height: 75px;
+}
+
+.icono-gato {
+  border-radius: 60%;
+  height: 100px;
+  width: 110px;
+  font-size: 5rem;
   animation: cambio 2s infinite;
 }
 
-
-
 @keyframes cambio {
-  0%{
+  0% {
     transform: translateY(10px);
-    background-color: rgb(0, 213, 255);
+    background-color: rgb(14, 203, 250);
   }
-  50%{
+  50% {
     transform: translateY(-10px);
     background-color: green;
   }
-  100%{
+  100% {
     transform: translateY(10px);
     background-color: blue;
-
   }
+}
+
+/*El texto se hará visible cuando hay un ganador*/
+.ganar {
+  margin-top: 10%;
+  height: 30px;
+  animation: cambio 2s infinite;
+  visibility: hidden; /* oculto el mensaje de ganar */
 }
